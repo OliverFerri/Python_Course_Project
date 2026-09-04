@@ -25,7 +25,7 @@ Below are questions I answered in my project:
 To find the most demanded skills for the top 3 most popular data roles, I first filtered for only roles in the United States. Then I looked at the top skills for each job role, and took the top 5 of those skills. From there I narrowed things down to only the top 3 skills. This highlights the importance of each skill in each data role, and can help job seekers more effectively target skills they need to learn or improve on.
 
 View my notebook with detailed steps here:
-[2_Skills_Demand.ipynb](3_Project\2_Skills_Demand.ipynb)
+[2_Skills_Demand.ipynb](3_Project/2_Skills_Demand.ipynb)
 
 ```python
 df_skills = df_US_DA.explode('job_skills').copy()
@@ -58,7 +58,7 @@ df_skills_count = df_skills_count.sort_values(
 
 ### Results
 
-![Top Skills in Top Jobs](3_Project\images\data_jobs_top_skills.png)
+![Top Skills in Top Jobs](3_Project/images/data_jobs_top_skills.png)
 _Graph visualizing the top 5 skills in the roles, Data Analyst, Data Enginer and Data Scientists, which are the top 3 data jobs_
 
 ### Insights
@@ -91,7 +91,7 @@ df_US_pivot = df_US_pivot.drop(columns='job_posted_month_no')
 
 ### Results
 
-![Trending Top Skills](3_Project\images\skills_trend.png)
+![Trending Top Skills](3_Project/images/skills_trend.png)
 _Line graph visualizing the trending top skills for data anayslts in the United States in 2023_
 
 ### Insights:
@@ -133,7 +133,7 @@ plt.show()
 
 #### Results
 
-![Trending Top Skills](3_Project\images\salary_distribution.png)
+![Trending Top Skills](3_Project/images/salary_distribution.png)
 _Box plot visualizing the salary distribution for the top 6 data job titles_
 
 #### Insights
@@ -174,7 +174,7 @@ plt.show()
 
 #### Results
 
-![Trending Top Skills](3_Project\images\top_skills_vs_in_demand.png)
+![Trending Top Skills](3_Project/images/top_skills_vs_in_demand.png)
 _Bar plot visualizing the top paying skills vs the pay or the most in-demand skills_
 
 #### Insights
@@ -206,7 +206,7 @@ skills_count = skills_count.head(top_skills)
 
 ### Results
 
-![Trending Top Skills](3_Project\images\optimal_skills.png)
+![Trending Top Skills](3_Project/images/optimal_skills.png)
 _Scatter plot visualizing the salary distribution vs the percent of analyst jobs skills appear in_
 
 ### Insights
